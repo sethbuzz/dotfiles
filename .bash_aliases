@@ -21,8 +21,7 @@ alias buzz='cd ~/code/buzzient/ ; ls'
 ## Packages ##
 # apt aliases
 alias apt='sudo aptitude install'
-#alias search='apt-cache search'
-alias search='yum search '
+alias search='apt-cache search'
 alias update='sudo aptitude update'
 alias upgrade='sudo aptitude safe-upgrade'
 # Share pubkey
@@ -42,11 +41,15 @@ alias gls='git ls-files '
 ## Vim extras
 # shortcuts
 alias v="vim"
+## editor extras
+# vim shortcuts
 alias v?="find ./* -name *.swp" # find all swp files unsaved from here up the tree
+# Cloud9 IDE shortcuts
+alias clide="node ~/code/cloud9/bin/cloud9.js -w ./"
 
 ## MISC
 # General Spelling mistakes
-alias cim='vim_wrapper'
+alias cim='vim'
 alias sl='ls'
 alias shh='ssh'
 # Music
@@ -62,6 +65,12 @@ alias sshtun="ssh -D 1080 toast"
 # tmux
 alias tmux="tmux -2"
 alias tx="tmux attach"
+# Fedora specific aliases
+alias pip='pip-python'
+alias searchy='yum search '
+## Fun
+# XKCD style, four random word password
+alias xkcdpw="echo $(grep \'^[^\']\{3,5\}$\' /usr/share/dict/words|shuf -n4)"
 
 ## Obsolete
 # pulseaudio sucks
@@ -69,6 +78,3 @@ alias restartpulse='sudo killall -9 pulseaudio; pulseaudio >/dev/null 2>&1 &'
 # xmonad
 alias pullthestring='killall metacity; xmonad &'
 alias dotawesome='killall metacity; awesome-start &'
-
-# Fedora specific aliases
-alias pip='pip-python'

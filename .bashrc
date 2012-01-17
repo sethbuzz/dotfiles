@@ -95,7 +95,7 @@ fi
 export DEBEMAIL='seth@isforinsects.com'
 export DEBFULLNAME='Seth Woodworth'
 export EDITOR='/usr/bin/vim'
-export EMAIL='seth@isforinsects.com'
+#export EMAIL='seth@isforinsects.com'
 
 
 #
